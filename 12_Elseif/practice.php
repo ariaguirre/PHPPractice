@@ -1,11 +1,6 @@
 <?php
-	
-	// Constants
 	define('TITLE', 'Else if Statement')
 	
-	// Custom Variables
-
-
 ?>
 
 <!DOCTYPE html>
