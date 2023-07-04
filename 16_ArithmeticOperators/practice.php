@@ -46,7 +46,7 @@
 					$b = 19;
 					$c = ($a * $b);
 					
-					echo "$a &times; $b is equal to $c";
+					echo "$a * $b is equal to $c";
 				?>
 				
 				<h3>Division <code>/</code></h3>
@@ -67,17 +67,16 @@
 					echo "$a % $b is equal to $c";
 				?>
 				
-			</div><!-- end sandbox -->
+			</div>
 			
 			<a href="index.php" class="button">Back to the lecture</a>
 			
 			<hr>
-			
-			<small>&copy;<!-- YEAR --> - <!-- NAME --></small>
-		</div><!-- end wrapper -->
+
+</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
