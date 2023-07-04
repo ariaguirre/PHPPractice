@@ -1,7 +1,7 @@
 <?php
 	
 	// Constants
-
+	define('TITLE', 'Else if Statement')
 	
 	// Custom Variables
 
@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP - <?php echo TITLE?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -20,13 +20,21 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+			<h1>Tutorial 12: <small><?php echo TITLE?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
-				
+			<?php
+			$language = 'Spanish';
+			
+			if($language == 'English'){
+				echo 'Do you speak english? Me too!';
+			} else if ($language == 'Spanish') {
+				echo 'Hablas español? Yo tambien!';
+			} else echo 'I dont speak ' . $language;
+			?>
 			</div><!-- end sandbox -->
 			
 			<a href="index.php" class="button">Back to the lecture</a>
