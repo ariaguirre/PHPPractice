@@ -1,17 +1,19 @@
 <?php
-	
-	// Constants
+	define("TITLE", "Logical Operators");
 
-	
-	// Custom Variables
-
+	$lessonNum	= 15;
+    $username = "arianaA";
+    $password = "myPassword123";
+    
+    $cartTotal = 19.99;
+    $couponCode = "DiscountPlease";
 
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP <?php echo TITLE; ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -20,36 +22,56 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
 				
-				<h3>And <code>and</code></h3>
+			<h3>And <code>and</code></h3>
 				<?php
-					// your code here
+					if ($username == "arianaA" and $password == "myPassword123") {
+						echo "<p>Login info is correct!</p>";
+					}
 				?>
 				
 				<h3>Or <code>or</code></h3>
 				<?php
-					// your code here
+					if ($cartTotal > 15 or $couponCode == "DiscountPlease") {
+						echo "You get a discount!";
+					} else {
+						echo "You don't get a discount!";
+					}
 				?>
 				
 				<h3>Not <code>!</code></h3>
 				<?php
-					// your code here
+					$ownDog = true;
+					
+					if (!$ownDog) {
+						echo "You do not own a dog.";
+					} else {
+						echo "You own a dog.";
+					}
 				?>
 				
 				<h3>And <code>&amp;&amp;</code></h3>
 				<?php
-					// your code here
+					if ($username == "arianaA" && $password == "myPassword123") {
+						echo "<p>Login info is correct!</p>";
+					} else {
+						echo "<p>Wrong login info</p>";
+					}
 				?>
 				
 				<h3>Or <code>||</code></h3>
 				<?php
-					// your code here
+					if ($cartTotal > 15 || $couponCode == "DiscountPlease") {
+						echo "You get a discount!";
+					} else {
+						echo "You don't get a discount!";
+					}
 				?>
 				
 			</div><!-- end sandbox -->
