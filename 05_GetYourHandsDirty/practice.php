@@ -1,17 +1,8 @@
 <?php
-	
-	// Define a Constant
-	
-	
-	// Your Variables
-	
-	
-	/*
-	Use PHP to calculate the difference
-	between your birth year and this year
-	to show your age dynamically
-	*/
-
+define("NAME", "Ariana");
+$todays_date = date("d/m/y");
+$color = "Green";
+$age = date("Y") - 2000;
 	
 ?>
 
@@ -34,23 +25,23 @@
 			
 			<div class="sandbox">
 				<h3>Today's Date:</h3>
-				<p><!-- DATE --></p>
+				<p><?php echo $todays_date ?></p>
 				
 				<h3>My Name:</h3>
-				<p><!-- YOUR NAME --></p>
-				
+				<p><?php echo NAME ?></p>
+
 				<h3>My Favourite Colour:</h3>
-				<p><!-- FAVOURITE COLOUR --></p>
+				<p><?php echo $color ?></p>
 				
 				<h3>My Age:</h3>
-				<p><!-- YOUR AGE --></p>
+				<p><?php echo $age ?></p>
 			</div><!-- end sandbox -->
 			
 			<a href="index.php" class="button">Back to the final example</a>
 			
 			<hr>
 			
-			<small>&copy;<!-- THIS YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo date("Y")?> - <?php echo NAME?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

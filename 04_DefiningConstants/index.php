@@ -2,7 +2,7 @@
 	
 	// Define a Constant
 	define("TITLE", "Defining Constants");
-	
+	define("SALUDO", "Hola, estoy probando");
 	// Variables
 	$my_name = "Brad";
 	$lesson_num = 4;
@@ -13,7 +13,6 @@
 <html>
 	<head>
 		<title><?php echo TITLE; ?></title>
-		
 		<link href="../assets/styles.css" rel="stylesheet">
 		<script type="text/javascript" src="../assets/syntaxhighlighter/scripts/shCore.js"></script>
 		<script type="text/javascript" src="../assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
@@ -28,6 +27,8 @@
 			</a>
 			
 			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
+			<h2><?php echo SALUDO; ?></h2>
+
 			<hr>
 
 			<div class="sandbox">
