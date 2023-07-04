@@ -1,20 +1,31 @@
 <?php
+	define('TITLE', 'Multi Dimensional Arrays');
 	
-	// Constants
-	
-	
-	// Custom Variables
+	$users = array(
+		array(
 
-	
-	// Moustache Multi-Dimensional Array
-
+			"name" => "Maria",
+			"email"=> "maria@gmail.com",
+			"orders" => "5"
+		), 
+		array(
+			"name" => "Juan",
+			"email"=> "juan@gmail.com",
+			"orders" => "3"	
+		),
+		array(
+			"name" => "Laura",
+			"email"=> "laura@gmail.com",
+			"orders" => "9"	
+		)
+	)
 
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- PAGE TITLE --></title>
+		<title>PHP <?php echo TITLE?></title>
 		<link href="/assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -23,24 +34,28 @@
 				<img src="/assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- PAGE TITLE --></small></h1>
+			<h1>Tutorial 08: <small><?php echo TITLE?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
-				<h2>The <!-- MOUSTACHE NAME --> Moustache!</h2>
-				<p>This moustache is quite the dirt squirrel! It boasts a creep factor of <strong><!-- CREEP FACTOR --></strong> and takes <strong><!-- GROWTH DAYS --> days</strong> to grow on average.</strong></p>
+				<h2>The user <?php echo $users[0]["name"]?>:</h2>
+				<p>This user is registered under the email <strong> <?php echo $users[0]["email"]?> </strong> and has made <strong><?php echo $users[0]["orders"]?> </strong> orders in the last month.</p>
+				<h2>The user <?php echo $users[1]["name"]?>:</h2>
+				<p>This user is registered under the email <strong> <?php echo $users[1]["email"]?> </strong> and has made <strong><?php echo $users[1]["orders"]?> </strong> orders in the last month.</p>
+				<h2>The user <?php echo $users[2]["name"]?>:</h2>
+				<p>This user is registered under the email <strong> <?php echo $users[2]["email"]?> </strong> and has made <strong><?php echo $users[2]["orders"]?> </strong> orders in the last month.</p>
 				
-				<!-- REPEAT ABOVE 2X -->
 				
-			</div><!-- end sandbox -->
+				
+			</div>
 			
 			<a href="index.php" class="button">Back to the lecture</a>
 			
 			<hr>
 			
-			<small>&copy;<!-- YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo date("Y")?> - <?php echo "Ariana"?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
