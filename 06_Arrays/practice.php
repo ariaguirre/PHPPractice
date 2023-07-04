@@ -1,19 +1,13 @@
 <?php
+	define("ARRAYS", "Arrays");
 	
-	// Constants
-
-	
-	// Custom Variables
-
-	
-	// Moustache Array
-	
+	$phones = array("IPhone", "Samsung", "Huawei");
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><!-- PAGE TITLE --></title>
+		<title><?php echo ARRAYS?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -22,18 +16,18 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Lecture <!-- LESSON NUMBER -->: <small><!-- PAGE TITLE --></small></h1>
+			<h1>Lecture 05: <small><?php echo ARRAYS?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
 			
-				<h2>Moustache Types</h2>
+				<h2>Phone Types</h2>
 				<ul>
-					<li><!-- MOUSTACHE 1 --></li>
-					<li><!-- MOUSTACHE 2 --></li>
-					<li><!-- MOUSTACHE 3 --></li>
+					<li><?php echo $phones[0]?></li>
+					<li><?php echo $phones[1]?></li>
+					<li><?php echo $phones[2]?></li>
 				</ul>
 				
 			</div><!-- end sandbox -->
@@ -42,7 +36,7 @@
 			
 			<hr>
 			
-			<small>&copy;<!-- YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo date("Y")?> - <?php echo "Ariana" ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
