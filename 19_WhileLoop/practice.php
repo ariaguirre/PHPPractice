@@ -1,17 +1,12 @@
 <?php
-	
-	// Constants
-
-	
-	// Custom Variables
-
-
-?>
+	define("TITLE", "While Loop");
+	$lessonNum	= 19;
+ ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP <?php echo TITLE; ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -20,30 +15,31 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+			<h1>Tutorial <?php echo $lessonNum; ?>>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
-				
+			<p>Echo every number between 10 and 20</p>
 				<?php
-				 
-				    // your code here
-				 
+				 $num = 10;
+				 while($num <= 20){
+					echo $num . "<br/>";
+					$num++; 
+				 }
 				?>
 				
-			</div><!-- end sandbox -->
+			</div>
 			
 			<a href="index.php" class="button">Back to the lecture</a>
 			
 			<hr>
-			
-			<small>&copy;<!-- YEAR --> - <!-- NAME --></small>
-		</div><!-- end wrapper -->
+
+		</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
