@@ -1,12 +1,6 @@
 <?php
-	
-	// Constants
 	define("TITLE", "Foreach Loop");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 21;
-
 ?>
 
 <!DOCTYPE html>
@@ -29,22 +23,20 @@
 			<div class="sandbox">
 				
 				<?php
-				 
-				    // your code here
-				 
+				 $brands = array("Adidas", "Nike", "Puma");
+
+				foreach($brands as $brand){
+					echo "I love $brand active wear. <br/>";
+				}	
 				?>
 				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
+		</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
