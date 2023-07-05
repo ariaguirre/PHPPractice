@@ -1,12 +1,6 @@
 <?php
-	
-	// Constants
 	define("TITLE", "Simple Arguments");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 25;
-
 ?>
 
 <!DOCTYPE html>
@@ -30,29 +24,29 @@
 				
 				<h3>One Argument</h3>
 				<?php
-					
-					// your code here
-					
+					function cities($location){
+						echo "I've never visited $location, have you? <br/>";
+					}
+					cities("Madrid");
+					cities("Australia");
 				?>
 				
 				<h3>Two Arguments</h3>
 				<?php
-				
-					// your code here
-				
+				function product($num1, $num2){
+					$result = $num1 * $num2;
+					echo "The product between $num1 and $num2 is $result. <br/>";
+				}
+				product(15, 40);
+				product(33, 12);
 				?>
 				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
-		
+		</div>
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
