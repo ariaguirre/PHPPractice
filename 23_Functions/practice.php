@@ -1,12 +1,6 @@
 <?php
-	
-	// Constants
 	define("TITLE", "Intro to Functions");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 23;
-	
 ?>
 
 <!DOCTYPE html>
@@ -30,43 +24,43 @@
 				
 				<h3>Using <code>sort()</code></h3>
 				<?php
-					
-					// your code here
-					
+					$users = array("Maria", "Juan", "Vivian", "Cristian");
+					sort($users);
+					foreach($users as $user){
+						echo "$user <br/>"; 
+					}
 				?>
 				
 				<h3>Using <code>rsort()</code></h3>
 				<?php
-					
-					// your code here
-					
+					rsort($users);
+					foreach($users as $user){
+						echo "$user <br/>";
+					}
 				?>
 				
 				<h3>Using <code>strtolower()</code></h3>
 				<?php
-					
-					// your code here
-					
+					$str = "HEY! HOW ARE YOU?";
+					echo $str . "<br/>";
+					echo strtolower($str);
 				?>
 				
 				<h3>Using <code>sha1()</code></h3>
 				<?php
-					
-					// your code here
-					
+					$password = "MyPassword";
+					echo "Before: $password <br/>";
+					$password = sha1($password);
+					echo "After: $password";
 				?>
 				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
+		</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
