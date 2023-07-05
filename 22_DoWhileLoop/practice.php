@@ -1,12 +1,6 @@
 <?php
-	
-	// Constants
 	define("TITLE", "Do While Loop");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 22;
-	
 ?>
 
 <!DOCTYPE html>
@@ -27,24 +21,22 @@
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
+			<p>Echo every number between 0 and 10.</p>
 				
 				<?php
-				 
-				    // your code here
-				 
+				 $num = 0;
+				 do{
+					echo "Number: $num . <br/>";
+					$num++;
+				 } while ($num <= 10);
 				?>
-				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
+		</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
