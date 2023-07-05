@@ -1,18 +1,12 @@
 <?php
-	
-	// Constants
 	define("TITLE", "For Loop");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 20;
-
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <?php echo TITLE; ?></title>
+		<title>PHP - <?php echo TITLE; ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -27,24 +21,20 @@
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
-				
+			<p>Echo the numbers between 0 and 20. </p>
 				<?php
-				 
-				    // your code here
-				 
+				for($a = 0; $a <= 20; $a++){
+					echo "Number: $a . <br/>";
+				}
 				?>
 				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
+		</div>
 		
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
