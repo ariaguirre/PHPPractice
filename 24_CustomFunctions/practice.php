@@ -1,12 +1,6 @@
 <?php
-	
-	// Constants
 	define("TITLE", "Custom Functions");
-	
-	// Custom Variables
-	$myName	= "Brad Hussey";
 	$lessonNum	= 24;
-
 ?>
 
 <!DOCTYPE html>
@@ -29,22 +23,20 @@
 			<div class="sandbox">
 				
 				<?php
-					
-					// your code here
-					
+					function greetings() {
+						$user = "Maria";
+						echo "Hello $user! How can I help you?";
+					}
+					$working = false;
+					if($working) greetings();
+					else echo "Our team works between 08 am to 17 pm";
 				?>
-				
-			</div><!-- end sandbox -->
-			
+			</div>
 			<a href="index.php" class="button">Back to the lecture</a>
-			
 			<hr>
-			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
-		</div><!-- end wrapper -->
-		
+		</div>
 		<div class="copyright-info">
 			<?php include('../assets/includes/copyright.php'); ?>
-		</div><!-- end copyright-info -->
+		</div>
 	</body>
 </html>
